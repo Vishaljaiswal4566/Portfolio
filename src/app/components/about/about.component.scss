@@ -1,0 +1,212 @@
+.about {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.page-tag {
+  font-size: 11px;
+  color: #4f8ef7;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.about-card {
+  background: #141d35;
+  border: 0.5px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 1.75rem;
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f8ef7, #6c63ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 auto 1rem;
+}
+
+.about-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.about-role {
+  font-size: 13px;
+  color: #4f8ef7;
+  margin-bottom: 1.25rem;
+}
+
+.about-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(226, 232, 240, 0.5);
+  background: rgba(255, 255, 255, 0.03);
+  border: 0.5px solid rgba(255, 255, 255, 0.07);
+  border-radius: 6px;
+  padding: 7px 12px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #4f8ef7;
+  flex-shrink: 0;
+}
+
+.about-content p {
+  font-size: 14px;
+  color: rgba(226, 232, 240, 0.55);
+  line-height: 1.9;
+  margin-bottom: 1.1rem;
+}
+
+// Bottom highlight cards
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 1rem;
+}
+
+.highlight-card {
+  background: #0f1629;
+  border: 0.5px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+
+  &.accent-card {
+    border-color: rgba(79, 142, 247, 0.2);
+    background: rgba(79, 142, 247, 0.04);
+  }
+}
+
+.hl-title {
+  font-size: 11px;
+  color: #4f8ef7;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hl-stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.hl-stat {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.05);
+}
+
+.hl-num {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+
+  span { color: #4f8ef7; font-size: 13px; }
+}
+
+.hl-desc {
+  font-size: 11px;
+  color: rgba(226, 232, 240, 0.35);
+  margin-top: 2px;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cert-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(226, 232, 240, 0.55);
+}
+
+.cert-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #4f8ef7;
+  flex-shrink: 0;
+}
+
+.cert-org {
+  font-size: 11px;
+  color: rgba(226, 232, 240, 0.28);
+  margin-left: auto;
+}
+
+.achiev-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.achiev-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(226, 232, 240, 0.5);
+  line-height: 1.6;
+}
+
+.achiev-icon {
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  &.visible { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
